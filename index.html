@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>트래블로그</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		@font-face {
+    font-family: 'MonoplexKR-Italic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Italic.woff2') format('woff2');
+    font-weight: 100,200,400,600;
+    font-style: normal;
+}
+		body{
+			margin: 0px auto;
+
+		}
+
+		.container-1{
+			width: 100vw;
+			height: 100vh;
+			background: url(changeback.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			margin: 0 auto;
+		}
+
+		.main-container-1{
+			margin: 0px auto;
+			width: 1600px;
+			height: 800px;
+			position: relative;
+			/*background: wheat;*/
+		}
+
+		.first-head{
+			margin: 0 auto;
+			
+			width: 450px;
+			padding-top: 200px;
+			
+			
+
+		}
+		.first-head h1{
+			text-align: center;
+			font-size: 64px;
+			color: white;
+			font-weight: 100;
+			font-family: 'MonoplexKR-Italic';
+			letter-spacing: -3.5%;
+			border: 2px solid white;
+			width: 450px;
+			border-radius: 50%;
+			height: 150px;
+			line-height: 150px;
+		}
+
+		.container-marquee{
+
+			width: 100vw;
+			height: 60px;
+			background: white;
+
+		}
+
+		.container-marquee marquee{
+			font-size: 24px;
+			color: #3B68FF;
+			line-height: 60px;
+			font-family: 'MonoplexKR-Italic';
+		}
+
+		.container-1 img{
+			
+			position: absolute;
+
+		}
+
+
+		#sticker1{
+			width: 280px;
+			top: 63px;
+			left: 139px;
+		}
+
+		#sticker2{
+			width: 240px;
+			top: 82px;
+			left: 1180px;
+		}
+
+		#sticker3{
+			width: 420px;
+			top: 520px;
+			left: 650px;
+		}
+
+
+
+		.container-2{
+			margin: 0 auto;
+			width: 100vw;
+			height: 100vh;
+		}
+		#row{
+			margin: 0px auto;
+			width: 1200px;
+			/*background: beige;*/
+		
+		}
+
+		#row h1{
+			text-align: center;
+			font-size: 24px;
+			color: #3B68FF;
+			
+			
+		}
+
+
+
+		.ticker-total-container{
+			width: 800px;
+			margin: 0px auto;
+
+		}
+
+		.ticker-total-container h1{
+			font-size: 24px;
+			font-weight: 200;
+			color: #3B68FF;
+			text-align: center;
+		}
+
+		.ticker-container{
+			margin-top: 130px;
+			display: flex;
+			height: 300px;
+
+		}
+
+		.ticker-rocktext{
+			/*background: blue;*/
+			height: 120px;
+			margin-top: 145px;
+			
+			width: 400px;
+			color: #3B68FF;
+
+
+		}
+
+		.ticker-rocktext h3{
+			height: 120px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			text-align: center;
+			line-height: 0px;
+			
+			font-weight: 600;
+			color: #2B3F6C;
+			font-size: 72px;
+			
+		}
+
+		.ticker{
+			height: 85px;
+			overflow: hidden;
+			margin-top: 150px;
+			padding-top: 10px;
+			width: 400px;
+			padding-left: 100px;
+			/*background: black;*/
+
+		}
+
+		.ticker li{
+			height: 85px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			text-align: center;
+			line-height: 80px;
+			padding-left: 4px;
+			font-weight: 600;
+			color: white;
+			font-size: 72px;
+			color: #3B68FF;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		AOS.init();
+	</script>
+
+	<div class="container-1">
+		<div class="container-marquee"><marquee behavior="scroll" direction="left" scrollamount="10">*트래블로그* 연말의 당신, 어디론가 떠나고 싶지 않나요? 저는 당장..짐싸고 싶습니다. 떠나지 못하는 나를 위해 추억하는 여행기록 *트래블로그*</marquee></div>
+		<div class="main-container-1">
+		<div class="first-head"><h1>Travel log</h1></div>
+		<img src="sticker1.png" id="sticker1">
+		<img src="sticker2.png" id="sticker2">
+		<img src="sticker3.png" id="sticker3">
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div id="row">
+			<div class="ticker-total-container">
+				<h1 data-aos="fade-up">제 트래블로그를 구경하려면 원하는 나라를 클릭하세요.</h1>
+				<div class="ticker-container" data-aos="fade-up">
+					<div class="ticker-rocktext">
+						<h3>아! 다시 가고싶다 </h3>
+					</div>
+					<div id="ticker" class="ticker">
+						<ul id="rolling">
+							<li id="city1">프라하</li>
+							<li id="city2">몽골</li>
+							<li id="city3">비엔나</li>
+							<li id="city4">베를린</li>
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var rolling = document.getElementById("rolling");
+		window.setInterval(function(){
+			rolling.style.transitionDuration = "200ms";
+			rolling.style.marginTop = "-2em";
+
+			window.setTimeout(function(){
+				rolling.removeAttribute("style");
+				rolling.appendChild(rolling.firstElementChild);
+			},100);
+
+			
+		},2000);
+
+		// var city2 = document.getElementById("city2");
+		// city2.onclick = function(){
+		// 	var link = 'file:///Users/ichaeyeon/Desktop/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A52/9%E1%84%92%E1%85%AC%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/city2/index.html';
+		// 	location.href=link;
+		// }
+
+	</script>
+</body>
+</html>
